@@ -19,7 +19,7 @@ export default function PageRouter() {
             <BrowserRouter basename='/BlogSpotFrontend'>
                 <Routes>
                     <Route index element={<App />} />
-                    <Route path='/BlogSpotFrontend/home' element={<App />} />
+                    <Route path='/home' element={<App />} />
                     <Route path='/create' element={<Create />} />
                     <Route path='/edit' element={<Edit />} />
                     <Route path='/login' element={<Login />} />
