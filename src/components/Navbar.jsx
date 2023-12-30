@@ -12,8 +12,8 @@ function Navbar() {
                 </a>
 
                 <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="/" className="nav-link px-2 link-dark">Home</a></li>
-                    <li><a href="/create" className="nav-link px-2 link-dark">Create</a></li>
+                    <li><a href="#/" className="nav-link px-2 link-dark">Home</a></li>
+                    <li><a href="#/create" className="nav-link px-2 link-dark">Create</a></li>
                     <li><a href="#" className="nav-link px-2 link-dark">Pricing</a></li>
                     <li><a href="#" className="nav-link px-2 link-dark">FAQs</a></li>
                     <li><a href="#" className="nav-link px-2 link-dark">About</a></li>

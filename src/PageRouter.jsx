@@ -14,6 +14,10 @@ export default function PageRouter() {
                 <Routes>
                     <Route path="/" element={<App />} />
                     <Route path='/create' element={<Create />} />
+                    <Route path='/edit' element={<Edit />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/register' element={<Register />} />
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
             </HashRouter>
             {/* <BrowserRouter basename='/BlogSpotFrontend'>
@@ -21,10 +25,7 @@ export default function PageRouter() {
                     <Route index element={<App />} />
                     <Route path='/home' element={<App />} />
                     <Route path='/create' element={<Create />} />
-                    <Route path='/edit' element={<Edit />} />
-                    <Route path='/login' element={<Login />} />
-                    <Route path='/register' element={<Register />} />
-                    <Route path='*' element={<NotFound />} />
+                    
                 </Routes>
             </BrowserRouter> */}
         </CookiesProvider>
