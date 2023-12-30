@@ -1,6 +1,7 @@
 {
   "name": "blogspot",
   "private": true,
+  "homepage": "https://kaushik1766.github.io/BlogSpotFrontend/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
