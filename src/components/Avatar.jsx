@@ -29,8 +29,8 @@ function Avatar(props) {
     function Guest() {
         return <>
             <div className="col-md-3 text-end">
-                <a href='/login' type="button" className="btn btn-outline-primary me-2">Sign-in</a>
-                <a href='/register' type="button" className="btn btn-primary">Sign-up</a>
+                <a href='#/login' type="button" className="btn btn-outline-primary me-2">Sign-in</a>
+                <a href='#/register' type="button" className="btn btn-primary">Sign-up</a>
             </div>
         </>;
     }
