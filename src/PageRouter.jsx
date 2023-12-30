@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import App from './pages/App.jsx';
 import Create from './pages/Create.jsx';
 import NotFound from './pages/NotFound.jsx';
@@ -10,7 +10,10 @@ import { CookiesProvider } from 'react-cookie';
 export default function PageRouter() {
     return (
         <CookiesProvider>
-            <BrowserRouter>
+            <HashRouter>
+                <App />
+            </HashRouter>
+            {/* <BrowserRouter>
                 <Routes>
                     <Route index element={<App />} />
                     <Route path='/BlogSpotFrontend/home' element={<App />} />
@@ -20,7 +23,7 @@ export default function PageRouter() {
                     <Route path='/register' element={<Register />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */}
         </CookiesProvider>
     );
 }
