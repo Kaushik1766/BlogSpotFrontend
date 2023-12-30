@@ -13,7 +13,7 @@ export default function PageRouter() {
             <HashRouter>
                 <Routes>
                     <Route path="/" element={<App />} />
-                    <Route path='/create' element{<Create />} />
+                    <Route path='/create' element={<Create />} />
                 </Routes>
             </HashRouter>
             {/* <BrowserRouter>
