@@ -11,7 +11,10 @@ export default function PageRouter() {
     return (
         <CookiesProvider>
             <HashRouter>
-                <App />
+                <Routes>
+                    <Route path="/" element={<App />} />
+                    <Route path='/create' element{<Create />} />
+                </Routes>
             </HashRouter>
             {/* <BrowserRouter>
                 <Routes>
