@@ -10,13 +10,13 @@ import { CookiesProvider } from 'react-cookie';
 export default function PageRouter() {
     return (
         <CookiesProvider>
-            {/* <HashRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<App />} />
                     <Route path='/create' element={<Create />} />
                 </Routes>
-            </HashRouter> */}
-            <BrowserRouter basename='/BlogSpotFrontend'>
+            </HashRouter>
+            {/* <BrowserRouter basename='/BlogSpotFrontend'>
                 <Routes>
                     <Route index element={<App />} />
                     <Route path='/home' element={<App />} />
@@ -26,7 +26,7 @@ export default function PageRouter() {
                     <Route path='/register' element={<Register />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */}
         </CookiesProvider>
     );
 }
