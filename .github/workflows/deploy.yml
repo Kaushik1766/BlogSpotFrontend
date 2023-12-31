@@ -23,7 +23,8 @@ jobs:
 
       - name: Build project
         run: npm run build
-        env: VITE_ABC: 'helloworld'
+        env: 
+          VITE_ABC: 'helloworld'
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
