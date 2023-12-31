@@ -6,6 +6,7 @@ import Edit from './pages/Edit.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import { CookiesProvider } from 'react-cookie';
+import Pricing from './pages/Pricing.jsx';
 
 export default function PageRouter() {
     return (
@@ -17,6 +18,7 @@ export default function PageRouter() {
                     <Route path='/edit' element={<Edit />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
+                    <Route path='/pricing' element={<Pricing />} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
             </HashRouter>
