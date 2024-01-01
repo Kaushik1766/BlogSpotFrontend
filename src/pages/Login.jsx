@@ -14,12 +14,12 @@ export default function Login() {
     const [cookies, updateCookies] = useCookies(['user']);
     // console.log(cookies.sessionID); 
     if (cookies.sessionID != null) {
-        axios.post("http://localhost:3000/login", cookies);
+        axios.post(import.meta.env.VITE_BACKEND + "/login", cookies);
     }
     const [credentials, updateCredentials] = useState({ username: '', password: '' });
     async function login() {
 
-        let resp = await axios.post('http://localhost:3000/login', credentials).catch((error) => {
+        let resp = await axios.post(import.meta.env.VITE_BACKEND + '/login', credentials).catch((error) => {
             console.log(error);
             return error.response;
         });
@@ -30,7 +30,7 @@ export default function Login() {
             updateCookies('sessionID', resp.data, { maxAge: 432000 })
         }
         if (resp.status == 200) {
-            window.location.href = '/login';
+            window.location.href = '#/login';
         }
         else {
             window.location.reload();

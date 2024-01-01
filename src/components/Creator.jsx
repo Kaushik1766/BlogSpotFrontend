@@ -13,12 +13,12 @@ export default function Creator() {
             if (selector != null) {
                 auth = selector
             }
-            axios.post("http://localhost:3000/create", {
+            axios.post(import.meta.env.VITE_BACKEND + "/create", {
                 title: content.title, post: content.post, author: auth,
             });
             console.log(content);
             if (window.confirm("Post Created successfully...\nPress OK to go to Home\nPress Cancel to Create new post")) {
-                window.location.href = '/';
+                window.location.href = '#/';
             }
             else {
                 window.location.reload();

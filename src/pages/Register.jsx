@@ -6,13 +6,13 @@ export default function Register() {
 
     const [credentials, updateCredentials] = useState({ username: '', password: '' });
     async function register() {
-        let resp = await axios.post('http://localhost:3000/register', credentials).catch((error) => {
+        let resp = await axios.post(import.meta.env.VITE_BACKEND + '/register', credentials).catch((error) => {
             console.log(error);
             return error.response;
         });
         window.alert(resp.data);
         if (resp.status == 200) {
-            window.location.href = '/login';
+            window.location.href = '#/login';
         }
         else {
             window.location.reload();

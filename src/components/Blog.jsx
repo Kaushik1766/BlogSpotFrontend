@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 function Buttons({ author, id, reRender }) {
     function deletePost(id) {
         if (window.confirm('Are you sure you want to delete the post?')) {
-            axios.post("http://localhost:3000/del", { id: id });
+            axios.post(import.meta.env.VITE_BACKEND + "/del", { id: id });
             reRender()
         }
     }
@@ -17,7 +17,7 @@ function Buttons({ author, id, reRender }) {
     }
     else {
         return <div className="">
-            <button type="button" className="btn btn-primary align-self-end mx-2" onClick={() => { window.location.href = "/edit" }} >Edit</button>
+            <button type="button" className="btn btn-primary align-self-end mx-2" onClick={() => { window.location.href = "#/edit" }} >Edit</button>
             <button type="button" className="btn btn-danger align-self-end mx-2" onClick={() => { deletePost(id); }}>Delete</button>
         </div>
     }
