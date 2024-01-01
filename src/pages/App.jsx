@@ -22,7 +22,7 @@ function MainPage() {
         <Navbar />
         {content.map((value, key) => {
             return <Blog title={value.title} post={value.post} author={value.author} id={value.id} reRender={reRender} key={key} />
-        })};
+        })}
     </>
 }
 
