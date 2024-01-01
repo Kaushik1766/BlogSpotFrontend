@@ -28,13 +28,14 @@ export default function Login() {
         }
         else {
             updateCookies('sessionID', resp.data, { maxAge: 432000 })
+            window.location.href = '#/'
         }
-        if (resp.status == 200) {
-            window.location.href = '#/login';
-        }
-        else {
-            window.location.reload();
-        }
+        // if (resp.status == 200) {
+        //     window.location.href = '#/login';
+        // }
+        // else {
+        //     window.location.reload();
+        // }
     }
 
     function handleChange(event) {
