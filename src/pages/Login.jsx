@@ -9,7 +9,7 @@ export default function Login() {
     let username = useSelector((state) => state.login.username)
     console.log(username);
     if (username != null) {
-        window.location.replace('/')
+        window.location.replace('#/')
     }
     const [cookies, updateCookies] = useCookies(['user']);
     // console.log(cookies.sessionID); 
