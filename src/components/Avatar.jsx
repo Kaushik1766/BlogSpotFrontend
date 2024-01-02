@@ -36,7 +36,7 @@ function Avatar(props) {
     }
 
     async function logout() {
-        await axios.post(import.meta.env.VITE_BACKEND + 'logout', { username: selector })
+        await axios.post(import.meta.env.VITE_BACKEND + '/logout', { username: selector })
         setCookie('sessionID', null)
         dispatch(setUser(null))
     }

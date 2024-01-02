@@ -15,7 +15,7 @@ export default function PageRouter() {
                 <Routes>
                     <Route path="/" element={<App />} />
                     <Route path='/create' element={<Create />} />
-                    <Route path='/edit' element={<Edit />} />
+                    <Route path='/edit/:id' element={<Edit />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/register' element={<Register />} />
                     <Route path='/pricing' element={<Pricing />} />
